@@ -38,18 +38,25 @@ body {
 }
 
 .font-styling {
-  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-stroke: .2px #ffffff;
   color: transparent;
   font-size: 130px;
   letter-spacing: 4px;
   font-family: "Monument Extended";
   margin-bottom: 300px;
+  width: 0%;
+  transition: 1s;
+
+  
+
   
 }
+
 
 .font-styling:hover {
   color: #ffffff;
   opacity: 0.7;
+  width: 100%;
 }
 
 .movedown {
@@ -117,30 +124,37 @@ button {
   outline:none;
 }
 
-#images {
-  
-  max-width: 100%;
-  height: 600px;
-  margin-left: 670px;
-  background-image: url(https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
-  background-repeat: no-repeat;
-  background-size: 500px 600px;
-  
-}
-.z {
-  z-index: -1;
-  position: absolute
-}
-
-.crunch{
+.crunch {
   margin-bottom: -60px;
 }
 
-.hide {
-  color: transparent;
+
+
+
+div#image2 {
+  background-image: url('https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
+  height: 1000px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-size: 500px 700px;
+  position: absolute;
+  z-index: -1;
+  margin-top: -600px;
+  margin-left: 650px;
 }
 
-#photo:hover + #images {
+div#design:hover ~ div#image2 {
+  background-image: url('https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=941&q=80');
+}
 
-    background-image: url('https://images.unsplash.com/photo-1561948955-570b270e7c36?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=859&q=80');
+div#photo:hover ~ div#image2 {
+  background-image: url('https://images.unsplash.com/photo-1542144612-1b3641ec3459?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
+}
+
+div#video:hover ~ div#image2 {
+  background-image: url('https://images.unsplash.com/photo-1569484763183-df2821b0238e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
+}
+
+div#music:hover ~ div#image2 {
+  background-image: url('https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
 }
